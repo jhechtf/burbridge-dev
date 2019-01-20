@@ -2,22 +2,30 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 
-Vue.use(Router)
+Vue.use(Router);
 
-export default new Router({
+const $originalTitle = document.title;
+const router = new Router({
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'active',
   routes: [
     {
       path: '/',
       name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: Home,
+      meta: {
+        title: 'Home'
+      }
     }
   ]
-})
+});
+
+router.beforeEach((to,from,next)=>{
+  // We can set the title dynamically, almost as if this was a whole other page
+  if(to.meta.title){
+    document.title = [$originalTitle, to.meta.title].join(' | ');
+  }
+  next();
+});
+
+export default router;
