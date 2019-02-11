@@ -1,10 +1,20 @@
 <template>
-    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <section class="container">
-            <div class="navbar-menu">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <span class="is-hidden-desktop is-size-4">Jim Burbridge</span>
+                </div>
+                <a role="button" class="navbar-burger burger has-text-white" @click="toggleMenu" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu" :class="{'is-active': isMenuVisible}">
                 <div class="navbar-end">
-                    <router-link to="/" class="navbar-item">Home</router-link>
-                    <router-link to="/something" class="navbar-item">Testing</router-link>
+                    <router-link to="/" class="navbar-item" exact>Home</router-link>
+                    <router-link to="/contact-me" class="navbar-item">Contact Me</router-link>
                 </div>
             </div>
         </section>
@@ -22,22 +32,26 @@
 <script lang="ts">
 import Vue from 'vue';
 // Import the Vue library
-import debounce from 'lodash.debounce';
-// Import the Debounce function from lodash
 
 export default Vue.extend({
-    methods:{
-        onScroll(this: any){
+    methods: {
+        onScroll(this: any) {
             this.$el.classList.toggle('is-fixed-top', window.scrollY > 50);
-            this.$el.classList.replace('is-transparent','is-primary')
+        },
+        toggleMenu(this: any) {
+            this.isMenuVisible = !this.isMenuVisible;
         }
     },
-    beforeDestroy(){
+    data() {
+        return {
+            isMenuVisible: false
+        };
+    },
+    beforeDestroy() {
         document.removeEventListener('scroll', this.onScroll);
     },
-    created(){
+    created() {
         document.addEventListener('scroll', this.onScroll);
     }
 });
-
 </script>

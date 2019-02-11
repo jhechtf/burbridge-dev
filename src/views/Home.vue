@@ -8,7 +8,7 @@
 import Vue from 'vue';
 import Hero from '@components/Hero.vue';
 export default Vue.extend({
-  components:{
+  components: {
     Hero
   },
   name: 'home'

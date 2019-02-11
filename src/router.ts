@@ -1,12 +1,12 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from './views/Home.vue';
 
 Vue.use(Router);
 
 const $originalTitle = document.title;
 const router = new Router({
-  linkActiveClass: 'active',
+  linkActiveClass: 'is-active',
   linkExactActiveClass: 'active',
   routes: [
     {
@@ -16,13 +16,21 @@ const router = new Router({
       meta: {
         title: 'Home'
       }
+    },
+    {
+      path: '/contact-me',
+      name: 'contact-me',
+      component: () => import(/* webpackChunkName: "contact-me" */'@/views/ContactMe.vue'),
+      meta: {
+        title: 'Contact Me'
+      }
     }
   ]
 });
 
-router.beforeEach((to,from,next)=>{
+router.beforeEach((to,from,next)=> {
   // We can set the title dynamically, almost as if this was a whole other page
-  if(to.meta.title){
+  if(to.meta.title) {
     document.title = [$originalTitle, to.meta.title].join(' | ');
   }
   next();
