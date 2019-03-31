@@ -90,7 +90,7 @@ $navbar-item-active-background-color: transparent;
       }
   }
   .summary-text{
-    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px black;
     animation-delay: 1000ms;
   }
   .hero-footer{

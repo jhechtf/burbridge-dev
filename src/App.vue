@@ -14,9 +14,12 @@ export default Vue.extend({
 
 
 <style lang="scss">
-
+// I like this font.
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-// @import '~bulma/bulma.sass';
+// Need this, otherwise the next line won't work
+$mdi-font-path: '~@mdi/font/fonts';
+// Importing the icons to be used later on.
+@import '~@mdi/font/scss/materialdesignicons.scss';
 body{
   scroll-behavior: smooth;
 }
