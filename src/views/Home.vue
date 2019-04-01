@@ -1,6 +1,11 @@
 <template>
   <div class="home">
     <Hero/>
+    <section class="section has-background-black">
+      <div class="container">
+        <h1 class="title has-text-centered is-1 mt-1">Other info</h1>
+      </div>
+    </section>
   </div>
 </template>
 
