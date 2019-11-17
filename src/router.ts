@@ -7,6 +7,7 @@ Vue.use(Router);
 const $originalTitle = document.title;
 
 const router = new Router({
+  mode: 'hash',
   linkActiveClass: 'is-active',
   linkExactActiveClass: 'active',
   routes: [
@@ -21,9 +22,9 @@ const router = new Router({
   ]
 });
 
-router.beforeEach((to,from,next)=> {
+router.beforeEach((to, from, next) => {
   // We can set the title dynamically, almost as if this was a whole other page
-  if(to.meta.title) {
+  if (to.meta.title) {
     document.title = [$originalTitle, to.meta.title].join(' | ');
   }
   next();
