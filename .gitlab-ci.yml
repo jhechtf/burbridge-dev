@@ -16,3 +16,8 @@ pages:
   script:
     - yarn build --mode production
     - mv public public-control && mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
