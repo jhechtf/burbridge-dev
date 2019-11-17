@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+  },
+  "plugins": [
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "@vue/typescript"
+  ],
+  "parser": "vue-eslint-parser",
+  "rules": {
+    "@typescript-eslint/no-namespace": "off",
+    "vue/max-attributes-per-line": [
+      "warn",
+      {
+        "singleline": 5
+      }
+    ],
+    "@typescript-eslint/class-name-casing": "off"
+  },
+  "root": true,
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  }
+}

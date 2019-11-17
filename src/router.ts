@@ -5,6 +5,7 @@ import Home from './views/Home.vue';
 Vue.use(Router);
 
 const $originalTitle = document.title;
+
 const router = new Router({
   linkActiveClass: 'is-active',
   linkExactActiveClass: 'active',
@@ -15,14 +16,6 @@ const router = new Router({
       component: Home,
       meta: {
         title: 'Home'
-      }
-    },
-    {
-      path: '/contact-me',
-      name: 'contact-me',
-      component: () => import(/* webpackChunkName: "contact-me" */'@/views/ContactMe.vue'),
-      meta: {
-        title: 'Contact Me'
       }
     }
   ]

@@ -1,6 +1,19 @@
+// tslint:disable:no-bitwise
+export enum Level {
+  Master = 1,
+  Expert = 1 << 1,
+  Advanced = 1 << 2,
+  Intermediate = 1 <<3
+}
+export interface Skill {
+  name: string;
+  level: Level;
+  keywords: string[];
+}
+
 export default [{
     name: 'Web Development',
-    level: 'Master',
+    level: Level.Master,
     keywords: [
       'HTML',
       'CSS',
@@ -9,7 +22,7 @@ export default [{
   },
   {
     name: 'Front-End Frameworks',
-    level: 'Expert',
+    level: Level.Expert,
     keywords: [
       'ReactJS',
       'VueJs',
@@ -18,7 +31,7 @@ export default [{
   },
   {
     name: 'Back-End Systems',
-    level: 'Expert',
+    level: Level.Expert,
     keywords: [
       'Laravel',
       'Lumen',
@@ -28,7 +41,7 @@ export default [{
   },
   {
     name: 'Programming Languages',
-    level: 'Intermediate',
+    level: Level.Intermediate,
     keywords: [
       'Python',
       'Go',
@@ -37,7 +50,7 @@ export default [{
   },
   {
     name: 'Build Systems',
-    level: 'Advanced',
+    level: Level.Advanced,
     keywords: [
       'Jenkins',
       'Gitlab CI'
@@ -45,7 +58,7 @@ export default [{
   },
   {
     name: 'Containers / Container Deployment Systems',
-    level: 'Advanced',
+    level: Level.Advanced,
     keywords: [
       'Docker',
       'Kubernetes',
@@ -55,7 +68,7 @@ export default [{
   },
   {
     name: 'HTTP Servers',
-    level: 'Expert',
+    level: Level.Expert,
     keywords: [
       'Nginx',
       'Apache2'
@@ -63,7 +76,7 @@ export default [{
   },
   {
     name: 'Cloud Platforms',
-    experience: 'Advanced',
+    experience: Level.Advanced,
     keywords: [
       'AWS',
       'Amazon Web Services',
@@ -71,4 +84,4 @@ export default [{
       'Google Cloud Platform'
     ]
   }
-];
+] as Skill[];

@@ -5,30 +5,44 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
     "dev": "vue-cli-service serve",
+    "lint:fix": "eslint --ext ts,vue --fix src/*",
+    "preserve": "yarn --frozen-lockfile",
+    "release": "standard-version",
+    "release:dry": "standard-version --dry-run",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@mdi/font": "^3.4.93",
-    "@types/lodash.debounce": "^4.0.4",
+    "axios": "^0.18.0",
+    "buefy": "^0.7.5",
     "bulma": "^0.7.2",
-    "lodash.debounce": "^4.0.8",
     "vue": "^2.5.21",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
     "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^4.0.5",
     "@vue/cli-plugin-typescript": "^3.3.0",
     "@vue/cli-plugin-unit-jest": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
+    "conventional-changelog-emojis": "^3.1.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-vue": "^6.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "standard-version": "^7.0.0",
     "ts-jest": "^23.0.0",
-    "typescript": "^3.0.0",
+    "typescript": "^3.7.2",
+    "vue-eslint-parser": "^7.0.0",
     "vue-template-compiler": "^2.5.21"
   }
 }

@@ -1,0 +1,18 @@
+image: node:12-alpine
+stages:
+  - test
+  - deploy
+
+before_script:
+  - yarn --frozen-lockfile
+
+Test:
+  script:
+    - yarn test
+  allow_failure: true
+
+pages:
+  stage: deploy
+  script:
+    - yarn build --mode production
+    - yarn mv public public-control && mv dist public

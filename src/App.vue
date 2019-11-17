@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import { mapState } from 'vuex';
 
 export default Vue.extend({
 });
@@ -15,12 +14,15 @@ export default Vue.extend({
 
 <style lang="scss">
 // I like this font.
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 // Need this, otherwise the next line won't work
-$mdi-font-path: '~@mdi/font/fonts';
+$mdi-font-path: "~@mdi/font/fonts";
 // Importing the icons to be used later on.
-@import '~@mdi/font/scss/materialdesignicons.scss';
-body{
+@import "~@mdi/font/scss/materialdesignicons.scss";
+@import "bulma/bulma.sass";
+@import "buefy/src/scss/buefy.scss";
+body,
+html {
   scroll-behavior: smooth;
 }
 </style>
