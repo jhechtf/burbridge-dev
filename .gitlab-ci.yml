@@ -15,4 +15,4 @@ pages:
   stage: deploy
   script:
     - yarn build --mode production
-    - yarn mv public public-control && mv dist public
+    - mv public public-control && mv dist public
