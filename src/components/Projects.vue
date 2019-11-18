@@ -3,7 +3,11 @@
     <h1 class="title is-1 has-text-centered">Projects at a Glance</h1>
     <div class="container">
       <div class="columns is-deck is-variable is-2">
-        <div class="column" v-for="project in viewableProjects" :key="`project-${project.id}`">
+        <div
+          class="column is-full-mobile"
+          v-for="project in viewableProjects"
+          :key="`project-${project.id}`"
+        >
           <a :href="project.http_url_to_repo">
             <div class="card">
               <div class="card-header">
@@ -87,10 +91,14 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+@import "~bulma/sass/utilities/initial-variables.sass";
 .is-deck {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
   .card {
     height: 100%;
     display: flex;
