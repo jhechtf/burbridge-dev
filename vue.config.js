@@ -15,5 +15,5 @@ module.exports = {
         const directories = fs.readdirSync(fromSrc('.'), { withFileTypes: true }).filter(item => item.isDirectory());
         directories.forEach(dir => config.resolve.alias.set('@' + dir.name, fromSrc(dir.name)));
     },
-    publicPath: process.env.NODE_ENV === 'production' ? `/${process.env.CI_PROJECT_NAME}/` : '/'
-}
+    publicPath: '/'
+};
