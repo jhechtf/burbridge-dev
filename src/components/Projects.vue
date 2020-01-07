@@ -37,10 +37,6 @@
         <em>public</em> repositories &mdash; I keep quite a few private
         repositories that are work-in-progress, or simple tests.
       </p>
-      <p>
-        To view more of my activity, please go to my
-        <a href="https://gitlab.com/jhechtf">Gitlab</a> page.
-      </p>
     </div>
   </div>
 </template>
@@ -72,7 +68,7 @@ export default Vue.extend({
       // Computed properties are weird because they are mounted to the instance before some things
       // and after others, so in order to make sure that everything work correctly it's best to assume
       // that nothing is where it should be, and that you SHOULD have a fallback.
-      if (!this.projects.length) return [];
+      if (!this.projects) return [];
       // we're just going to show the first $props.limit.
       return this.projects.slice(0, this.$props.limit);
     }

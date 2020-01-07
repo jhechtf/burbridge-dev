@@ -22,7 +22,9 @@ $mdi-font-path: "~@mdi/font/fonts";
 @import "bulma/bulma.sass";
 @import "buefy/src/scss/buefy.scss";
 body,
-html {
+html,
+#app {
   scroll-behavior: smooth;
+  height: 100%;
 }
 </style>

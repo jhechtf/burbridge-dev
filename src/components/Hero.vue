@@ -67,6 +67,7 @@ $navbar-item-active-background-color: transparent;
   background-image: url("../assets/milky-way-man.jpg");
   background-size: cover;
   background-position: center 0;
+  background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   .title,
   .subtitle {

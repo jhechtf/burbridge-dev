@@ -6,10 +6,24 @@ stages:
 before_script:
   - yarn --frozen-lockfile
 
+Lint:
+  stage: test
+  script:
+    - yarn lint
+  only:
+    - branches
+  except:
+    - master
+
 Test:
+  stage: test
   script:
     - yarn test
   allow_failure: true
+  only:
+    - branches
+  except:
+    - master
 
 pages:
   stage: deploy

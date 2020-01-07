@@ -18,7 +18,7 @@ const router = new Router({
       meta: {
         title: 'Home'
       }
-    }
+    },
   ]
 });
 
