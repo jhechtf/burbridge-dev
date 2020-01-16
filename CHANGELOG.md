@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.2.0](https://gitlab.com/jhechtf/jhechtf/compare/v1.1.0...v1.2.0) (2020-01-16)
+
+
+### Features
+
+- Adds in Google Analytics ([726a06b](https://gitlab.com/jhechtf/jhechtf/commit/726a06b0c4f868b69002983576d9540b46f74f9a))
+
+
+### Miscellaneous
+
+- Update public path ([4b37d59](https://gitlab.com/jhechtf/jhechtf/commit/4b37d591fe6bd2102b2e9da23baad47dc69f7c1e))
+- Merge branch 'config/update-public-path' into 'master' ([a93d76f](https://gitlab.com/jhechtf/jhechtf/commit/a93d76f78c2e153fb6e3dca27e20ffc1dcce759f))
+
 # 1.1.0 (2020-01-07)
 
 
