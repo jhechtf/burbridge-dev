@@ -1,5 +1,9 @@
 <template>
   <section class="content">
+    <div
+      class="notification is-primary has-text-centered"
+      v-if="hasNotification"
+    >testing{{notification}}</div>
     <Navbar class="is-dark" />
     <main class="section">
       <div class="container">
@@ -79,17 +83,22 @@ export default Vue.extend({
           email: this.email,
           message: this.message,
           subject: this.subject
-        }).finally(() => {
+        }, { withCredentials: true }).finally(() => {
+          this.hasNotification = true;
+          this.notification = 'Sent!'
           this.name = '';
           this.email = '';
           this.message = '';
           this.subject = '';
+          setTimeout(() => this.hasNotification = false, 1500);
         });
       }
     }
   },
   data() {
     return {
+      hasNotification: false,
+      notification: '',
       name: '',
       email: '',
       subject: '',
