@@ -21,6 +21,7 @@
       <div class="navbar-menu" :class="{'is-active': isMenuVisible}">
         <div class="navbar-end">
           <router-link to="/" class="navbar-item" exact>Home</router-link>
+          <router-link to="/contact-me" class="navbar-item" exact>Contact Me</router-link>
         </div>
       </div>
     </section>
