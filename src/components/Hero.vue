@@ -14,6 +14,10 @@
         <h1 class="title is-hidden-touch is-1">{{name}}</h1>
         <h2 class="subtitle is-3">{{label}}</h2>
         <p class="summary-text">{{summary}}</p>
+        <router-link
+          class="button is-primary is-light is-medium is-outlined has-top-margin"
+          to="contact-me"
+        >Contact Me</router-link>
       </div>
     </div>
 
@@ -32,11 +36,6 @@ $navbar-background-color: transparent;
 $navbar-item-active-background-color: transparent;
 // Import the stuff
 @import "~bulma/sass/utilities/_all.sass";
-@import "~bulma/sass/base/_all.sass";
-@import "~bulma/sass/components/navbar.sass";
-@import "~bulma/sass/elements/title.sass";
-@import "~bulma/sass/layout/hero.sass";
-@import "~bulma/sass/elements/container.sass";
 
 // Keyframe definition to load the stuff on the page
 @keyframes load {
@@ -49,7 +48,9 @@ $navbar-item-active-background-color: transparent;
     transform: translateY(0);
   }
 }
-
+.has-top-margin {
+  margin-top: 1rem;
+}
 .chevron-down {
   box-sizing: border-box;
   display: inline-block;
@@ -64,10 +65,10 @@ $navbar-item-active-background-color: transparent;
 }
 // Custom definitions for the hero
 .is-main-hero {
-  background-image: url("../assets/milky-way-man.jpg");
+  background-image: url("../assets/milky-way-man.png");
   background-size: cover;
   background-position: center 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #43192f;
   color: #fff;
   .title,
   .subtitle {

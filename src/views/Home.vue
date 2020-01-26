@@ -12,7 +12,7 @@ import Vue from 'vue';
 import Hero from '@components/Hero.vue';
 import Projects from '@components/Projects.vue';
 import Footer from '@components/Footer.vue';
-const Social = (): Promise<typeof import('@components/Social.vue')> => import(/* webpackChunkName: Social */'@components/Social.vue')
+const Social = (): Promise<typeof import('@components/Social.vue')> => import(/* webpackChunkName: "Social" */'@components/Social.vue')
 export default Vue.extend({
   components: {
     Hero,

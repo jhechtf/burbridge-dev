@@ -19,6 +19,15 @@ const router = new Router({
         title: 'Home'
       }
     },
+    {
+      path: '/contact-me',
+      name: 'contact',
+      // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+      component: () => import(/* webpackChunkName: "contact" */'./views/Contact.vue'),
+      meta: {
+        title: 'Contact Me'
+      }
+    }
   ]
 });
 
