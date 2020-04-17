@@ -15,5 +15,8 @@ module.exports = {
         const directories = fs.readdirSync(fromSrc('.'), { withFileTypes: true }).filter(item => item.isDirectory());
         directories.forEach(dir => config.resolve.alias.set('@' + dir.name, fromSrc(dir.name)));
     },
+    css: {
+        extract: true,
+    },
     publicPath: '/'
 };
