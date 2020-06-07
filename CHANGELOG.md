@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.1](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.0...v1.3.1) (2020-06-07)
+
+
+### Miscellaneous
+
+- Update yarn lock and CI for deployment ([704f651](https://gitlab.com/jhechtf/jhechtf/commit/704f651494f3a53bfd4c8efc947f2ca9eaf99dd1))
+- Merge branch 'master' of https://gitlab.com/jhechtf/jhechtf ([daeabea](https://gitlab.com/jhechtf/jhechtf/commit/daeabeaf138d73106623cd3f5af4a09d38d4960a))
+- Merge branch 'move-to-nuxt' into 'master' ([a9186cc](https://gitlab.com/jhechtf/jhechtf/commit/a9186cc7be5036ec7525b4110198e0bdde919d08)), closes [#5](https://gitlab.com/jhechtf/jhechtf/issues/5/
+
 # [1.3.0](https://gitlab.com/jhechtf/jhechtf/compare/v1.2.0...v1.3.0) (2020-06-07)
 
 
