@@ -31,7 +31,8 @@ Test:
 pages:
   stage: deploy
   script:
-    - mkdir configs && cp $PRODUCTION_CONFIG configs/config.json
+    - echo $PRODUCTION_CONFIG
+    - mkdir configs && ls -l && cp $PRODUCTION_CONFIG configs/config.json
     - yarn generate
     - mv dist public
   artifacts:
