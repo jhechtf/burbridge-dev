@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.4](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.3...v1.3.4) (2020-06-07)
+
+
+### Miscellaneous
+
+- Debugging commit ([1c9fde6](https://gitlab.com/jhechtf/jhechtf/commit/1c9fde6bf271f275322e07fc7390a3c41b9e261f))
+
 ## [1.3.3](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.2...v1.3.3) (2020-06-07)
 
 
