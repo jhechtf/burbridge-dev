@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.3](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.2...v1.3.3) (2020-06-07)
+
+
+### Miscellaneous
+
+- Forgot to use double ampersands when creating the config directory ([df43521](https://gitlab.com/jhechtf/jhechtf/commit/df435218ad466ab5f570f4c990e141cc76c14fb2)), closes [#6](https://gitlab.com/jhechtf/jhechtf/issues/hopefully resolves #6/
+
 ## [1.3.2](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.1...v1.3.2) (2020-06-07)
 
 
