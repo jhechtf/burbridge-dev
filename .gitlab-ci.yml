@@ -4,7 +4,7 @@ stages:
   - deploy
 
 before_script:
-  - yarn --frozen-lockfile
+  - yarn
 
 Lint:
   stage: test
