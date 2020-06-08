@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.5](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.4...v1.3.5) (2020-06-08)
+
+
+### Bug Fixes
+
+- Fixes bug on contacts page ([5d65db5](https://gitlab.com/jhechtf/jhechtf/commit/5d65db59993c5d05da90357d7aa1acc96ea4df3e)), closes [#7](https://gitlab.com/jhechtf/jhechtf/issues/7/
+
+
+### Miscellaneous
+
+- Removes previous changes to the gitlab-ci ([3a1b973](https://gitlab.com/jhechtf/jhechtf/commit/3a1b973d5d3c270faed4089753b083b6b07bafe6)), closes [#6](https://gitlab.com/jhechtf/jhechtf/issues/6/
+- Merge branch 'fix/contacts-page-layout' into 'master' ([e2eac75](https://gitlab.com/jhechtf/jhechtf/commit/e2eac751e347edb3df5497094e0dbcb3ed117f71)), closes [#7](https://gitlab.com/jhechtf/jhechtf/issues/7/
+
 ## [1.3.4](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.3...v1.3.4) (2020-06-07)
 
 
