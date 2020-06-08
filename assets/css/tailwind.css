@@ -5,9 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
 
 
-html, body, #__nuxt, #__layout, #default-page {
-  height: 100% !important;
-}
 
 #default-page {
   display: flex;

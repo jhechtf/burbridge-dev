@@ -57,7 +57,7 @@ textarea:focus {
 </style>
 
 <template>
-  <form class="bg-gray-100 flex-grow something p-3" @submit.prevent="handleSubmit">
+  <form class="bg-gray-100 flex-grow p-3" @submit.prevent="handleSubmit">
     <div class="md:w-3/4 md:mx-auto wrapper">
       <section v-if="has_info"></section>
       <h1 class="text-4xl mb-5">Contact Me</h1>

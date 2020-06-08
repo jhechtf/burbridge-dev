@@ -1,5 +1,5 @@
 <template>
-  <section id="default-page">
+  <section class="min-h-screen" id="default-page">
     <Navbar class="bg-green-800 px-5 text-gray-100" />
     <nuxt />
     <Footer />
@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
-import Footer from '@/components/Footer.vue';
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   components: {
     Footer,
     Navbar
   }
-}
+};
 </script>
 
 <style>
