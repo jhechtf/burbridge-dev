@@ -50,7 +50,7 @@ export default {
   ],
   server: {
     port: 8000,
-    hostname: 'burbridge.test'
+    hostname: 'burbridge.localhost'
   },
   /*
   ** Build configuration
