@@ -1,7 +1,7 @@
 {
   "name": "jim-resume",
   "description": "Quick-Build Website Profile",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -12,7 +12,8 @@
     "lint:fix": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
     "test": "ava",
     "test:unit": "cross-env TEST=unit ava ./test/specs/**/*",
-    "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*"
+    "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*",
+    "version": "standard-version"
   },
   "dependencies": {
     "@mdi/font": "^5.2.45",

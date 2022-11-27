@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.6](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.5...v1.3.6) (2022-11-27)
+
+
+### Miscellaneous
+
+- Chore: Adds in FullStory tracking ([c95e120](https://gitlab.com/jhechtf/jhechtf/commit/c95e1209af5229c381ca8c17c3852bcb9d0e4a81))
+
 ## [1.3.5](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.4...v1.3.5) (2020-06-08)
 
 
