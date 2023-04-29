@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.9](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.8...v1.3.9) (2023-04-29)
+
+
+### Miscellaneous
+
+- Ci: Updates asset stuff ([84ba4dc](https://gitlab.com/jhechtf/jhechtf/commit/84ba4dc146de134d2ce033abeeccaea77a3c04d0))
+- Merge branch 'ci/dammit-scuba-steve' into 'master' ([5e873da](https://gitlab.com/jhechtf/jhechtf/commit/5e873dadc807031f7c75286bcefda4fb95dc6b57))
+
 ## [1.3.8](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.7...v1.3.8) (2023-04-29)
 
 
