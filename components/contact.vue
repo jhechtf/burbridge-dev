@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style>
+
 input,
 textarea {
   @apply p-1 px-3 border rounded-md w-full outline-none;

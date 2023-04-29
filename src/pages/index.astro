@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../../components/Footer.vue';
+import Socials from '../../components/index/Social.vue';
+import Hero from '../../components/index/Hero.vue';
+import Projects from '../../components/index/Projects.vue';
+---
+
+<Layout>
+  <Hero client:load/>
+  <Projects client:load />
+  <Socials />
+  <Footer/>
+</Layout>
