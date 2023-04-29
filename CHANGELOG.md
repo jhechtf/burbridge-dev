@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.8](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.7...v1.3.8) (2023-04-29)
+
+
+### Miscellaneous
+
+- Ci: fixes build command ([b70d17e](https://gitlab.com/jhechtf/jhechtf/commit/b70d17e455962725948754936ff78a6324fc3889))
+- Merge branch 'ci/rename-build-command' into 'master' ([d5204f5](https://gitlab.com/jhechtf/jhechtf/commit/d5204f5ac927668dbd49b6cc17d87c816497f954))
+
 ## [1.3.7](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.6...v1.3.7) (2023-04-29)
 
 
