@@ -1,10 +1,10 @@
 <template>
   <nav class="p-3 flex justify-end">
-    <nuxt-link to="/" exact-active-class="font-bold border-b-2 border-gray-100">Home</nuxt-link>
-    <nuxt-link
+    <a href="/" exact-active-class="font-bold border-b-2 border-gray-100">Home</a>
+    <a
       exact-active-class="font-bold border-b-2 border-gray-100"
       class="ml-2"
-      to="/contact"
-    >Contact Me</nuxt-link>
+      href="/contact"
+    >Contact Me</a>
   </nav>
 </template>

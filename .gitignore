@@ -90,3 +90,6 @@ sw.*
 *.swp
 
 configs
+/test-results/
+/playwright-report/
+/playwright/.cache/

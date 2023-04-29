@@ -1,8 +1,10 @@
 <script>
-import Media from "@/components/Media.vue";
+import Media from "@/Media.vue";
+import Icon from '@/Icon.vue';
 export default {
   components: {
-    Media
+    Media,
+    Icon,
   }
 };
 </script>
@@ -19,7 +21,8 @@ export default {
         class="underline flex justify-center text-2xl border rounded-md my-2"
       >
         <Media>
-          <template slot="media-left">
+          <template v-slot:media-left>
+            <Icon iconName="mdiGitlab" :size="1.5" />
             <i class="mdi mdi-gitlab"></i>
           </template>
           <div class="pl-2">Gitlab</div>
@@ -30,8 +33,8 @@ export default {
         class="underline flex justify-center text-2xl border rounded-md my-2"
       >
         <Media>
-          <template slot="media-left">
-            <i class="mdi mdi-linkedin"></i>
+          <template v-slot:media-left>
+            <Icon iconName="mdiLinkedin" :size="1.5" />
           </template>
           <div class="pl-2">LinkedIn</div>
         </Media>
@@ -42,8 +45,8 @@ export default {
         class="underline flex justify-center text-2xl border rounded-md my-2"
       >
         <Media>
-          <template slot="media-left">
-            <i class="mdi mdi-stack-overflow"></i>
+          <template v-slot:media-left>
+            <Icon iconName="mdiStackOverflow" :size="1.5" />
           </template>
           <div class="pl-2">StackOverflow</div>
         </Media>
@@ -53,8 +56,8 @@ export default {
         class="underline flex justify-center text-2xl border rounded-md my-2"
       >
         <Media>
-          <template slot="media-left">
-            <i class="mdi mdi-dev-to"></i>
+          <template v-slot:media-left>
+            <Icon iconName="mdiDevTo" :size="1.5" />
           </template>
           <div class="pl-2">Dev.To</div>
         </Media>

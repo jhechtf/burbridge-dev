@@ -48,12 +48,11 @@ export default {
       >Something has gone wrong in trying to request data from the GitLab API. Please checkout the GitLab link in the Social section.</p>
     </template>
     <div v-else class="w-10/12 mx-auto">
-      <div class="grid md:grid-cols-5 col-gap-3 card-rows grid-flow-row grid-cols-1 overflow-auto">
+      <div class="grid md:grid-cols-5 gap-x-2 card-rows grid-flow-row grid-cols-1 overflow-auto">
         <section
           v-for="(project, index) in projects"
           style="display: contents"
           :key="`project-${index}`"
-          :href="project.web_url"
         >
           <h1
             class="bg-white text-xl rounded-t-md font-semi border border-b-0 pt-2 pb-3 text-center md:row-start-1 md:row-span-1"
@@ -70,7 +69,7 @@ export default {
                 :key="`tag-${project.id}-${tag}`"
                 :href="createTagLink(tag)"
                 target="_blank"
-                class="inline-block text-sm capitalize rounded rounded-sm bg-green-400 hover:bg-green-600 py-1 px-2 text-white m-1"
+                class="inline-block text-sm capitalize rounded-sm bg-green-400 hover:bg-green-600 py-1 px-2 text-white m-1"
               >{{tag}}</a>
             </template>
             <div v-else class="text-center">
