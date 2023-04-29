@@ -33,7 +33,7 @@ pages:
   script:
     - mkdir configs && cp $PRODUCTION_CONFIG configs/config.json
     - npm run generate
-    - mv dist public
+    - mv dist/* public
   artifacts:
     paths:
       - public
