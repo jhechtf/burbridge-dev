@@ -23,7 +23,6 @@
     "astro": "^2.3.2",
     "config": "^3.3.8",
     "eslint-plugin-vue": "^9.11.0",
-    "mdi-vue": "^3.0.13",
     "vue": "^3.2.47"
   },
   "devDependencies": {
