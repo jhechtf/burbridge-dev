@@ -16,13 +16,18 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@astrojs/react": "^2.1.2",
     "@astrojs/tailwind": "^3.1.1",
     "@astrojs/vue": "^2.1.1",
     "@mdi/font": "^5.2.45",
     "@mdi/js": "^7.2.96",
+    "@types/react": "^18.2.2",
+    "@types/react-dom": "^18.2.3",
     "astro": "^2.3.2",
     "config": "^3.3.8",
     "eslint-plugin-vue": "^9.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {
