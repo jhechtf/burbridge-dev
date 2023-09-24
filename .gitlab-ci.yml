@@ -13,7 +13,7 @@ Lint:
   rules:
     - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME !~ /^wip\-/ || $CI_COMMIT_TAG
       when: never
-    - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME != 'master'
+    - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME != 'main'
       when: always
 
 Test:
@@ -25,7 +25,7 @@ Test:
   rules:
     - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME !~ /^wip\-/ || $CI_COMMIT_TAG
       when: never
-    - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME != 'master'
+    - if: $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME != 'main'
       when: always
 
 pages:
