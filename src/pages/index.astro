@@ -1,14 +1,113 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Footer from '../../components/Footer.vue';
-import Socials from '../../components/index/Social.vue';
-import Hero from '../../components/index/Hero.vue';
-import Projects from '../../components/index/Projects.vue';
+import Layout from "../layouts/Layout.astro";
+import { mdiChevronDown } from "@mdi/js";
+import Icon from "@mdi/react";
+import Projects from '$lib/components/projects/projects';
+import Button from '$lib/components/button/button';
+import Link from '$lib/components/link/link';
+import Socials from '$lib/components/socials/socials'
+import clsx from 'clsx';
+import Footer from '../components/Footer.astro';
+
+const noAnim = Astro.cookies.has('no-animation');
 ---
 
 <Layout>
-  <Hero client:load/>
-  <Projects client:load />
+  <div
+    id="landing-hero"
+    class={clsx("h-screen radial-gradient flex justify-center items-center text-zinc-100 flex-col gap-8", {'no-animation': noAnim})}
+  >
+    <div class="flex gap-10 items-center">
+      <div
+        class="hand-wave text-8xl"
+        style="transform-origin: bottom right;"
+      >
+        &#128075;
+      </div>
+      <div class="flex flex-col gap-4 items-center">
+        <p class="lead text-3xl hey-there">Hey there, I&apos;m</p>
+        <h1
+          class="name-text text-6xl font-bold font-san bg-clip-text text-transparent bg-gradient-to-r from-emerald-200 via-sky-400 to-emerald-200"
+        >
+          Jim Burbridge
+        </h1>
+        <h2 class="text-2xl font-semibold title text-slate-30 animate-slide-fade" style="animation-delay: 2s; animation-fill-mode: forwards;">
+          Full Stack Engineer, Nerd, Aspiring Author
+        </h2>
+      </div>
+    </div>
+    <div class="flex gap-4">
+      <Link href="/Jim-Burbridge-2023.pdf" download rounded="full" color="primary:outline:inverse">Download Resume</Link>
+      <Link href="/contact" rounded="full" color="primary:inverse">Contact Me</Link>
+      
+    </div>
+    <footer class="absolute bottom-5 text-center">
+      <button class="hover:text-slate-50 text-slate-200">
+        <Icon path={mdiChevronDown} size={3} />
+      </button>
+    </footer>
+  </div>
+
+  <div class="bg-zinc-200">
+    <div class="@container/projects container mx-auto">
+      <h2 class="text-3xl font-semibold text-emerald-700 text-center mt-8">Projects (at a glance)</h2>
+      <Projects client:load />
+    </div>
+  </div>
   <Socials />
-  <Footer/>
+  <Footer />
 </Layout>
+
+<style lang="scss">
+  .radial-gradient {
+    background-image: radial-gradient(
+      circle at 50% 150%,
+      theme("colors.emerald.600"),
+      theme("colors.slate.900")
+    );
+  }
+  .no-animation {
+
+    .hand-wave,
+    .names,
+    .hey-there,
+    .title,
+    .name-text {
+      animation: none;
+    }
+  }
+  @keyframes wave2 {
+    0% {
+      rotate: -6deg;
+    }
+    50% {
+      rotate: 6deg;
+    }
+    100% {
+      rotate: 0;
+    }
+  }
+  .hand-wave {
+    animation: wave2;
+    animation-duration: 500ms;
+    animation-iteration-count: 3;
+  }
+  .hey-there {
+    animation: theme('animation.slide-fade');
+    animation-duration: 800ms;
+  }
+  .title {
+    animation: theme('animation.slide-fade');
+    animation-duration: 800;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .name-text {
+    animation: theme('animation.slide-fade');
+    animation-duration: 800ms;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+</style>

@@ -7,5 +7,3 @@ test('Route / exits and render HTML', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await expect(page).toHaveTitle('Jim Burbridge – Home');
 });
-
-// Close server and ask nuxt to stop listening to file changes
