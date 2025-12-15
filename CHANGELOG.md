@@ -4,14 +4,12 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.3.9](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.8...v1.3.9) (2023-04-29)
 
-
 ### Miscellaneous
 
 - Ci: Updates asset stuff ([84ba4dc](https://gitlab.com/jhechtf/jhechtf/commit/84ba4dc146de134d2ce033abeeccaea77a3c04d0))
 - Merge branch 'ci/dammit-scuba-steve' into 'master' ([5e873da](https://gitlab.com/jhechtf/jhechtf/commit/5e873dadc807031f7c75286bcefda4fb95dc6b57))
 
 ## [1.3.8](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.7...v1.3.8) (2023-04-29)
-
 
 ### Miscellaneous
 
@@ -20,7 +18,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.3.7](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.6...v1.3.7) (2023-04-29)
 
-
 ### Miscellaneous
 
 - Feat: Move to Astro ([d4667b3](https://gitlab.com/jhechtf/jhechtf/commit/d4667b3b132377b45dc8dd88d95dc74d01c03e98))
@@ -28,18 +25,15 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.3.6](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.5...v1.3.6) (2022-11-27)
 
-
 ### Miscellaneous
 
 - Chore: Adds in FullStory tracking ([c95e120](https://gitlab.com/jhechtf/jhechtf/commit/c95e1209af5229c381ca8c17c3852bcb9d0e4a81))
 
 ## [1.3.5](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.4...v1.3.5) (2020-06-08)
 
-
 ### Bug Fixes
 
 - Fixes bug on contacts page ([5d65db5](https://gitlab.com/jhechtf/jhechtf/commit/5d65db59993c5d05da90357d7aa1acc96ea4df3e)), closes [#7](https://gitlab.com/jhechtf/jhechtf/issues/7/
-
 
 ### Miscellaneous
 
@@ -48,13 +42,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.3.4](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.3...v1.3.4) (2020-06-07)
 
-
 ### Miscellaneous
 
 - Debugging commit ([1c9fde6](https://gitlab.com/jhechtf/jhechtf/commit/1c9fde6bf271f275322e07fc7390a3c41b9e261f))
 
 ## [1.3.3](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.2...v1.3.3) (2020-06-07)
-
 
 ### Miscellaneous
 
@@ -62,13 +54,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.3.2](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.1...v1.3.2) (2020-06-07)
 
-
 ### Miscellaneous
 
 - Updated build to use config files ([f7194cf](https://gitlab.com/jhechtf/jhechtf/commit/f7194cfab58a66d8d774f41d41addc882d76c4de))
 
 ## [1.3.1](https://gitlab.com/jhechtf/jhechtf/compare/v1.3.0...v1.3.1) (2020-06-07)
-
 
 ### Miscellaneous
 
@@ -78,16 +68,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 # [1.3.0](https://gitlab.com/jhechtf/jhechtf/compare/v1.2.0...v1.3.0) (2020-06-07)
 
-
 ### Features
 
 - Added in new Contact page ([c17fe45](https://gitlab.com/jhechtf/jhechtf/commit/c17fe45d3b455822cab5bbfea606a74e0886dc6f))
 
-
 ### Bug Fixes
 
 - Fixed contact me form bug ([8eb64ca](https://gitlab.com/jhechtf/jhechtf/commit/8eb64cafb9382f13b3208181a5d70de2d8b9a214))
-
 
 ### Miscellaneous
 
@@ -102,11 +89,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 # [1.2.0](https://gitlab.com/jhechtf/jhechtf/compare/v1.1.0...v1.2.0) (2020-01-16)
 
-
 ### Features
 
 - Adds in Google Analytics ([726a06b](https://gitlab.com/jhechtf/jhechtf/commit/726a06b0c4f868b69002983576d9540b46f74f9a))
-
 
 ### Miscellaneous
 
@@ -115,17 +100,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 # 1.1.0 (2020-01-07)
 
-
 ### Features
 
 - Finalized design of home page. ([a955826](https://gitlab.com/jhechtf/jhechtf/commit/a955826eff691ca26d77255a0b2f4037668a1a91))
-
 
 ### Bug Fixes
 
 - Fixed card deck display on tablet and smaller devices ([f7b2f69](https://gitlab.com/jhechtf/jhechtf/commit/f7b2f69cc82f06e6126c8bc770cbe55cc3b98ac3))
 - Fixed router error for production deployments ([1629e52](https://gitlab.com/jhechtf/jhechtf/commit/1629e52d3bea631dca2f5c0c14bf0898c62fe7a3))
-
 
 ### Miscellaneous
 

@@ -19,13 +19,10 @@
 		"build-storybook": "storybook build"
 	},
 	"dependencies": {
-		"@astrojs/react": "^2.3.2",
-		"@mdi/font": "^5.2.45",
-		"@mdi/js": "^7.2.96",
-		"@mdi/react": "^1.6.1",
+		"@octokit/rest": "^20.0.2",
 		"class-variance-authority": "^0.7.0",
 		"config": "^3.3.8",
-		"lucide-react": "^0.270.0",
+		"lucide-svelte": "^0.562.0",
 		"pixi.js": "^7.2.4",
 		"runed": "^0.37.0"
 	},
@@ -68,5 +65,8 @@
 		"vitest": "^4.0.15",
 		"vitest-browser-svelte": "^2.0.1"
 	},
-	"packageManager": "pnpm@10.26.0"
+	"packageManager": "pnpm@10.26.2",
+	"imports": {
+		"#app.css": "./src/app.css"
+	}
 }
