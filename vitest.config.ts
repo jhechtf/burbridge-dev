@@ -1,9 +1,11 @@
-import { getViteConfig } from 'astro/config';
-import vue from '@vitejs/plugin-vue';
+import { sveltekit } from "@sveltejs/kit/vite";
+import { defineConfig } from "vitest/config";
 
-export default getViteConfig({
-  plugins: [vue()],
+export default defineConfig({
+  plugins: [sveltekit()],
   test: {
-    environment: 'jsdom'
-  }
+    environment: "jsdom",
+    include: ["src/**/*.{test,spec}.{js,ts}"],
+    setupFiles: ["./src/testing/vitest-setup.ts"],
+  },
 });

@@ -1,4 +1,3 @@
-import Icon from '@mdi/react';
 import { useEffect, useState } from 'react';
 import { GitCompare, GitFork, ExternalLink } from 'lucide-react';
 import { Octokit } from '@octokit/rest';
@@ -44,7 +43,7 @@ export default function Projects() {
     }).then(d => {
       setData(d.data.filter(f => !f.fork));
     });
-    
+
     /**
      * aborts the request if the components gets unmounted before it completes.
      */
