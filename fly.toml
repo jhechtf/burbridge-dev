@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for burbridge-dev on 2025-12-15T08:19:16Z
+# fly.toml app configuration file generated for burbridge-dev on 2025-12-27T02:16:19Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'burbridge-dev'
-primary_region = 'sjc'
+primary_region = 'iad'
 
 [build]
 
