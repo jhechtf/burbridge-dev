@@ -1,3 +1,58 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where([data-mode=dark], [data-mode=dark] *));
+
+@layer base {
+	.h1 {
+		font-size: var(--text-2xl);
+		font-weight: var(--font-weight-semibold);
+		margin-block: --spacing(3) --spacing(1);
+	}
+	.h2 {
+		font-size: var(--text-xl);
+	}
+	.h3 {
+		font-size: var(--text-lg);
+	}
+}
+
+@layer components {
+	[class|='btn'] {
+		padding: 0.75rem 1rem;
+		position: relative;
+		cursor: pointer;
+		border-radius: var(--radius-sm);
+	}
+
+	.btn-outline-primary {
+		&:focus {
+			background-color: color-mix(in oklch, var(--color-green-400) 70%, transparent);
+			color: black;
+			outline: none;
+		}
+		&.active {
+			background-color: var(--color-green-400);
+			color: black;
+		}
+		border: 1px solid var(--color-green-400);
+		color: var(--color-green-400);
+	}
+	.btn-outline-error {
+		&:focus {
+			background-color: color-mix(in oklch, var(--color-red-500) 70%, transparent);
+			color: black;
+		}
+		&.active {
+			background-color: var(--color-red-500);
+			color: black;
+		}
+		border: 1px solid var(--color-red-500);
+		color: var(--color-red-500);
+	}
+	.btn-text-primary {
+		color: var(--color-green-400);
+	}
+	.btn-text-error {
+		color: var(--color-red-500);
+	}
+}

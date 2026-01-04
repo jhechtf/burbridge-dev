@@ -1,0 +1,26 @@
+# Buttons
+
+Buttons in TUI are simply classes that start with `.btn-`. The current list is
+
+- `btn-outline-primary`
+- `btn-outline-error`
+- `btn-text-primary`
+- `btn-text-error`
+
+These classes can be added to any element, not just `<button>` elements, to mimic the look and
+behavior of a button.
+
+***Because this is a class, there is no corresponding Svelte component as it would just wrap the classes***
+
+<div class="flex gap-3">
+  {
+    [
+      'btn-outline-primary',
+      'btn-outline-error',
+      'btn-text-primary',
+      'btn-text-error'
+    ].map(m => (
+      <button className={m}>{m}</button>
+    ))
+  }
+</div>
